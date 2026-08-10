@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NEUROPIX AI — реставрация, ретушь, увеличение, колоризация и AI-обработка изображений.">
+  <meta name="theme-color" content="#e3e5ea">
+  <title>NEUROPIX AI — AI-обработка изображений</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/prices.js" defer></script>
+  <script src="assets/images.js" defer></script>
+  <script src="assets/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="NEUROPIX AI — на главную">
+        <svg class="logo__mark" viewBox="0 0 52 52" aria-hidden="true">
+          <defs><linearGradient id="logoGradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
+          <rect x="3" y="3" width="46" height="46" rx="15" fill="url(#logoGradient)"/>
+          <path d="M14 35V17h5.2l13.6 12.2V17H38v18h-5.1L19.2 22.8V35H14Z" fill="white"/>
+          <path d="M39.8 8.8l1.2 3.2 3.2 1.2-3.2 1.2-1.2 3.2-1.2-3.2-3.2-1.2 3.2-1.2 1.2-3.2Z" fill="white"/>
+        </svg>
+        <span class="logo__text">NEUROPIX <small>AI</small></span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#prices">Цены</a>
+        <button class="nav__button" type="button" data-open-calculator>Калькулятор</button>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="Переключить тему" title="Переключить тему">◐</button>
+        <button class="button button--small" type="button" data-open-calculator>Рассчитать</button>
+        <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="hero__glow hero__glow--one"></div>
+      <div class="hero__glow hero__glow--two"></div>
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="eyebrow"><span></span> AI + ручной контроль</p>
+          <h1>AI-обработка изображений <em>с предсказуемым результатом</em></h1>
+          <p class="hero__lead">Восстановление старых фотографий, увеличение разрешения, портретная ретушь, товарная обработка и колоризация. AI ускоряет работу, финальное качество проверяется вручную.</p>
+          <div class="hero__buttons">
+            <a class="button" href="#services">Посмотреть услуги</a>
+            <button class="button button--ghost" type="button" data-open-calculator>Рассчитать стоимость</button>
+          </div>
+          <ul class="hero__facts"><li><strong>24–72 ч</strong><span>обычный срок</span></li><li><strong>до 8K</strong><span>увеличение</span></li><li><strong>2 правки</strong><span>включены</span></li></ul>
+        </div>
+
+        <div class="hero__visual reveal" data-delay="120">
+          <div class="hero-card">
+            <div class="hero-card__top"><span>Пример обработки</span><span class="status"><i></i> До / после</span></div>
+            <div class="compare compare--hero" data-hero-compare></div>
+            <div class="hero-card__meta"><span>Реставрация</span><span>Передвигайте разделитель</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div class="container trust__inner"><span>Для</span><div class="trust__items"><span>фотографов</span><span>маркетплейсов</span><span>архивов</span><span>семейных коллекций</span><span>брендов</span></div></div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> Услуги и примеры</p>
+          <h2>Описание каждой услуги + фотогалерея</h2>
+          <p>Каждый пример — отдельный слайдер «до/после» без фильтров и декоративных эффектов на изображениях.</p>
+        </div>
+
+        <article class="service-detail reveal" id="restoration">
+          <div class="service-detail__copy">
+            <span class="service-detail__number">01</span><p class="service-detail__kicker">Архив</p><h3>Реставрация фотографий</h3>
+            <p>Удаление царапин, заломов, пятен и шума. Восстановление лиц, одежды и фона с сохранением характера исходного снимка.</p>
+            <ul><li>семейные и исторические архивы;</li><li>сканы бумажных фотографий;</li><li>подготовка восстановленного снимка к печати.</li></ul>
+            <div class="service-detail__price">Стоимость: <strong data-price="restoration"></strong></div>
+            <button class="text-button" type="button" data-open-calculator data-service="restoration">Рассчитать реставрацию →</button>
+          </div>
+          <div class="service-detail__gallery" data-gallery="restoration"></div>
+        </article>
+
+        <article class="service-detail reveal" id="upscale">
+          <div class="service-detail__copy">
+            <span class="service-detail__number">02</span><p class="service-detail__kicker">Разрешение</p><h3>Увеличение и детализация</h3>
+            <p>Апскейл в 2–8 раз, повышение резкости и аккуратная реконструкция мелких деталей без лишнего «перешарпа».</p>
+            <ul><li>фото из мессенджеров;</li><li>стоп-кадры из видео;</li><li>подготовка к крупной печати.</li></ul>
+            <div class="service-detail__price">Стоимость: <strong data-price="upscale"></strong></div>
+            <button class="text-button" type="button" data-open-calculator data-service="upscale">Рассчитать увеличение →</button>
+          </div>
+          <div class="service-detail__gallery" data-gallery="upscale"></div>
+        </article>
+
+        <article class="service-detail reveal" id="retouch">
+          <div class="service-detail__copy">
+            <span class="service-detail__number">03</span><p class="service-detail__kicker">Портрет</p><h3>Портретная AI-ретушь</h3>
+            <p>Чистая кожа с сохранением текстуры, коррекция света, волос, одежды и фона. Без эффекта «пластикового» лица.</p>
+            <ul><li>деловые портреты;</li><li>социальные сети;</li><li>beauty и fashion.</li></ul>
+            <div class="service-detail__price">Стоимость: <strong data-price="retouch"></strong></div>
+            <button class="text-button" type="button" data-open-calculator data-service="retouch">Рассчитать ретушь →</button>
+          </div>
+          <div class="service-detail__gallery" data-gallery="retouch"></div>
+        </article>
+
+        <article class="service-detail reveal" id="marketplace">
+          <div class="service-detail__copy">
+            <span class="service-detail__number">04</span><p class="service-detail__kicker">E-commerce</p><h3>Товары и маркетплейсы</h3>
+            <p>Удаление и замена фона, чистка предмета, коррекция цвета, тени и отражений. Серия приводится к единому визуальному стандарту.</p>
+            <ul><li>Ozon и Wildberries;</li><li>интернет-магазины и каталоги;</li><li>серийная обработка карточек.</li></ul>
+            <div class="service-detail__price">Стоимость: <strong data-price="marketplace"></strong></div>
+            <button class="text-button" type="button" data-open-calculator data-service="marketplace">Рассчитать товарные фото →</button>
+          </div>
+          <div class="service-detail__gallery" data-gallery="marketplace"></div>
+        </article>
+
+        <article class="service-detail reveal" id="colorization">
+          <div class="service-detail__copy">
+            <span class="service-detail__number">05</span><p class="service-detail__kicker">Цвет</p><h3>Колоризация и стилизация</h3>
+            <p>Натуральная колоризация чёрно-белых фотографий и стилизация изображения под согласованный визуальный референс.</p>
+            <ul><li>исторические фотографии;</li><li>семейные архивы;</li><li>обложки и визуальные серии.</li></ul>
+            <div class="service-detail__price">Стоимость: <strong data-price="colorization"></strong></div>
+            <button class="text-button" type="button" data-open-calculator data-service="colorization">Рассчитать колоризацию →</button>
+          </div>
+          <div class="service-detail__gallery" data-gallery="colorization"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="prices">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow"><span></span> Стоимость</p><h2>Цены редактируются в одном файле</h2><p>Все суммы на этой странице и в калькуляторе загружаются из <code>assets/prices.js</code>.</p></div>
+        <div class="pricing-grid" id="pricing-grid"></div>
+        <div class="batch-note reveal"><span>Серийная обработка</span><p id="discount-note"></p><button class="text-button" type="button" data-open-calculator>Рассчитать несколько услуг →</button></div>
+      </div>
+    </section>
+
+    <section class="section process-section">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow"><span></span> Процесс</p><h2>От исходника до готового файла</h2></div>
+        <ol class="process"><li class="reveal"><span>01</span><div><h3>Получаем материал</h3><p>Вы отправляете оригиналы и референсы через облако, Telegram или форму.</p></div></li><li class="reveal" data-delay="70"><span>02</span><div><h3>Оцениваем задачу</h3><p>Проверяем качество исходников, объём и фиксируем состав работ.</p></div></li><li class="reveal" data-delay="140"><span>03</span><div><h3>Согласуем тест</h3><p>Для сложной или серийной работы делаем тестовый кадр.</p></div></li><li class="reveal" data-delay="210"><span>04</span><div><h3>Передаём результат</h3><p>Готовые файлы выдаются в согласованных форматах и размерах.</p></div></li></ol>
+      </div>
+    </section>
+
+    <section class="section section--dark faq-section">
+      <div class="container faq-grid">
+        <div class="section-heading reveal"><p class="eyebrow"><span></span> Вопросы</p><h2>Что важно знать</h2></div>
+        <div class="accordion reveal"><details open><summary>AI полностью заменяет ручную ретушь?</summary><p>Нет. AI используется как инструмент ускорения. Лица, текстуры, края объектов, мелкие детали и цвет проверяются вручную.</p></details><details><summary>Можно ли восстановить сильно повреждённое лицо?</summary><p>Возможность зависит от исходника и наличия дополнительных фотографий. При нехватке информации реконструкция может быть художественной.</p></details><details><summary>Какие форматы принимаются?</summary><p>JPEG, PNG, TIFF, PSD и большинство RAW-форматов. Для лучшего результата нужен оригинальный файл.</p></details><details><summary>Что с конфиденциальностью?</summary><p>Файлы используются для выполнения заказа и не публикуются без отдельного разрешения клиента.</p></details></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacts">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="eyebrow"><span></span> Контакты</p><h2>Покажите исходник — предложим решение</h2><p>Работа удалённо. Личная передача материалов — в Москве по предварительной договорённости.</p>
+          <div class="contact-list"><a href="mailto:yourmail@example.com"><span>Почта</span><strong>yourmail@example.com</strong></a><a href="https://t.me/your_telegram" target="_blank" rel="noopener"><span>Telegram</span><strong>@your_telegram</strong></a><a href="tel:+79990000000"><span>Телефон</span><strong>+7 (999) 000-00-00</strong></a><div><span>Адрес</span><strong>Москва, м. Марьина Роща</strong></div></div>
+          <p class="replace-note">Замените контакты на реальные перед публикацией.</p>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" data-email="yourmail@example.com">
+          <h3>Получить оценку</h3><p>Форма подготовит письмо в почтовой программе посетителя.</p>
+          <label>Имя<input type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться" required></label>
+          <label>Контакт<input type="text" name="contact" placeholder="Telegram, телефон или почта" required></label>
+          <label>Услуга<select name="service" id="contact-service"></select></label>
+          <label>Описание<textarea name="message" rows="6" placeholder="Количество файлов, желаемый результат, срок"></textarea></label>
+          <label class="checkbox"><input type="checkbox" required><span>Согласен на обработку данных для ответа на заявку</span></label>
+          <button class="button" type="submit">Подготовить письмо</button><p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="container map-wrap reveal"><iframe title="Карта района Марьина Роща в Москве" src="https://www.openstreetmap.org/export/embed.html?bbox=37.594%2C55.782%2C37.635%2C55.806&amp;layer=mapnik&amp;marker=55.794%2C37.616" loading="lazy"></iframe><div class="map-card"><span>Личная передача материалов</span><strong>Москва, м. Марьина Роща</strong><p>Точное место встречи — после согласования.</p></div></div>
+    </section>
+
+    <section class="cta-section"><div class="container cta reveal"><div><p>Нужно несколько видов обработки?</p><h2>Добавьте все услуги в один расчёт</h2></div><button class="button button--light" type="button" data-open-calculator>Открыть калькулятор</button></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer__grid"><a class="logo" href="#top"><span class="logo__text">NEUROPIX <small>AI</small></span></a><p>AI-обработка изображений с ручным контролем.</p><nav><a href="#services">Услуги</a><a href="#prices">Цены</a><a href="#contacts">Контакты</a></nav><p class="copyright">© <span id="year"></span></p></div></footer>
+
+  <section class="calc-window" id="calculator-window" aria-label="Калькулятор стоимости" aria-hidden="true">
+    <header class="calc-window__bar" id="calculator-drag-handle">
+      <div><span class="calc-window__dot"></span><strong>Калькулятор услуг</strong></div>
+      <div class="calc-window__controls">
+        <button type="button" id="calculator-minimize" aria-label="Свернуть калькулятор" title="Свернуть">−</button>
+        <button type="button" id="calculator-close" aria-label="Закрыть калькулятор" title="Закрыть">×</button>
+      </div>
+    </header>
+    <div class="calc-window__body" id="calculator-body">
+      <p class="calc-window__intro">Добавляйте несколько услуг. Каждая строка рассчитывается отдельно, затем суммы складываются.</p>
+      <div class="calc-items" id="calc-items"></div>
+      <button class="calc-add" id="calc-add-service" type="button">+ Добавить услугу</button>
+      <div class="calc-global">
+        <label>Срок выполнения<select id="calc-deadline"></select></label>
+      </div>
+      <div class="calc-total" aria-live="polite"><div><span>Ориентировочная стоимость</span><strong id="calc-total">—</strong></div><p id="calc-discount"></p></div>
+      <div class="calc-actions"><button class="button" id="calc-order" type="button">Перенести расчёт в заявку</button><button class="button button--ghost" id="calc-clear" type="button">Очистить</button></div>
+      <p class="calc-footnote">Итоговая стоимость фиксируется после просмотра исходников.</p>
+    </div>
+  </section>
+</body>
+</html>
