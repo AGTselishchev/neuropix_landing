@@ -1,0 +1,18 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+service-account*.json
+credentials*.json
+client_secret*.json
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/

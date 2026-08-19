@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://agtselishchev.github.io/neuropix_landing/sitemap.xml
