@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">NEUROPIX AI</title>
+  <desc id="desc">Анимированный градиентный знак NEUROPIX AI</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b5cf6">
+        <animate attributeName="stop-color" values="#8b5cf6;#22d3ee;#8b5cf6" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#22d3ee">
+        <animate attributeName="stop-color" values="#22d3ee;#8b5cf6;#22d3ee" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="58" height="58" rx="18" fill="#0c0e13"/>
+  <rect x="5" y="5" width="54" height="54" rx="16" fill="url(#bg)"/>
+  <circle cx="32" cy="32" r="23" fill="#fff" opacity=".08">
+    <animate attributeName="r" values="19;25;19" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".12;0;.12" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M16 44V20h6.8l18.1 16.2V20H48v24h-6.7L23.2 27.8V44H16Z" fill="#fff"/>
+  <path d="M49 10.5l1.5 4 4 1.5-4 1.5-1.5 4-1.5-4-4-1.5 4-1.5 1.5-4Z" fill="#fff">
+    <animateTransform attributeName="transform" type="rotate" from="0 49 16" to="360 49 16" dur="7s" repeatCount="indefinite"/>
+  </path>
+</svg>
